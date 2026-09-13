@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  sovezoshit:
+    build: .
+    container_name: sovezoshit
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      # - SNAP_DIR=/data/snapshots   # свой путь для снапшотов (внутри контейнера)
+    volumes:
+      - ./snapshots:/app/snapshots   # история версий переживает перезапуск

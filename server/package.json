@@ -1,0 +1,14 @@
+{
+  "name": "sovezoshit-server",
+  "version": "1.0.0",
+  "description": "ЦеЗошит — сервер совместного школьного блокнота (Node.js + ws)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": { "node": ">=16" },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "MIT"
+}
